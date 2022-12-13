@@ -23,3 +23,7 @@ Provide feedback
 Give a star
 
 Just say hi !
+
+Icons are from: [Tabs icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/tabs)
+
+

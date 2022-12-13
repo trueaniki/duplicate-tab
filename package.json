@@ -3,6 +3,7 @@
   "displayName": "Duplicate tab",
   "description": "Duplicate current tab and its content in defferent tab (as new file)",
   "version": "0.0.1",
+  "icon": "assets/tabs.png",
   "publisher": "IvanGrigorov",
   "keywords": ["Duplicate", "Tabs"],
   "engines": {
