@@ -1,7 +1,7 @@
 {
   "name": "duplicate-tab",
   "displayName": "Duplicate tab",
-  "description": "Duplicate current tab and its content in defferent tab",
+  "description": "Duplicate current tab and its content in defferent tab (as new file)",
   "version": "0.0.1",
   "publisher": "IvanGrigorov",
   "keywords": ["Duplicate", "Tabs"],
@@ -50,5 +50,9 @@
     "mocha": "^10.1.0",
     "typescript": "^4.9.3",
     "@vscode/test-electron": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IvanGrigorov/duplicate-tab.git"
   }
 }
