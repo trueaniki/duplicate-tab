@@ -1,10 +1,10 @@
 {
-  "name": "duplicate-tab",
-  "displayName": "Duplicate tab",
-  "description": "Duplicate current tab and its content in defferent tab (as new file)",
+  "name": "simply-duplicate-tab",
+  "displayName": "Simply duplicate tab",
+  "description": "Simply duplicate tab",
   "version": "0.0.1",
   "icon": "assets/tabs.png",
-  "publisher": "IvanGrigorov",
+  "publisher": "Aniki",
   "keywords": ["Duplicate", "Tabs"],
   "engines": {
     "vscode": "^1.74.0"
@@ -54,6 +54,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IvanGrigorov/duplicate-tab.git"
+    "url": "https://github.com/trueaniki/duplicate-tab.git"
   }
 }

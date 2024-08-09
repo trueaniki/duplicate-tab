@@ -6,16 +6,34 @@ import * as vscode from 'vscode';
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-	let disposable = vscode.commands.registerCommand('duplicate-tab.duplicate', () => {
-		duplicateTab();
+	let disposable = vscode.commands.registerCommand('duplicate-tab.duplicate', async (uri) => {
+		const viewColumn = vscode.window.activeTextEditor?.viewColumn;
+		let targetViewColumn = viewColumn;
+		if (viewColumn === 1) {
+			targetViewColumn = 2;
+		} else if (viewColumn === 2) {
+			targetViewColumn = 1;
+		}
+		if (uri) {
+			await vscode.window.showTextDocument(uri, {
+				viewColumn: targetViewColumn,
+				preserveFocus: false,
+				preview: false,
+			});
+		} else {
+			const currentFileName: any = vscode.window.activeTextEditor?.document.fileName;
+			if (!currentFileName) {
+				return;
+			}
+			await vscode.window.showTextDocument(currentFileName, {
+				viewColumn: targetViewColumn,
+				preserveFocus: false,
+				preview: false,
+			});
+		}
 	});
 
 	context.subscriptions.push(disposable);
-}
-
-function duplicateTab() {
-	const currentFileName = vscode.window.activeTextEditor?.document.fileName;
-	vscode.window.showTextDocument(currentFileName, -2, false);
 }
 
 // This method is called when your extension is deactivated
