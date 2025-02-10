@@ -1,0 +1,43 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="128" height="128" fill="none"/>
+    
+    <!-- Back window -->
+    <path 
+        d="M44 34 
+        h62 
+        a8 8 0 0 1 8 8 
+        v54 
+        a8 8 0 0 1 -8 8 
+        h-62 
+        a8 8 0 0 1 -8 -8 
+        v-54 
+        a8 8 0 0 1 8 -8"
+        fill="#3D3D3D"
+        stroke="#4F46E5"
+        stroke-width="6"
+        stroke-linejoin="round"
+    />
+    
+    <!-- Front window -->
+    <path 
+        d="M14 24 
+        h62 
+        a8 8 0 0 1 8 8 
+        v54 
+        a8 8 0 0 1 -8 8 
+        h-62 
+        a8 8 0 0 1 -8 -8 
+        v-54 
+        a8 8 0 0 1 8 -8"
+        fill="#252526"
+        stroke="#4F46E5"
+        stroke-width="6"
+        stroke-linejoin="round"
+    />
+    
+    <!-- Dots -->
+    <circle cx="26" cy="36" r="3" fill="#4F46E5"/>
+    <circle cx="36" cy="36" r="3" fill="#4F46E5"/>
+    <circle cx="46" cy="36" r="3" fill="#4F46E5"/>
+</svg>
