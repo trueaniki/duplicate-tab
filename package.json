@@ -4,7 +4,7 @@
   "description": "Simply duplicate tab",
   "version": "0.0.1",
   "icon": "assets/icon.png",
-  "publisher": "Aniki",
+  "publisher": "trueaniki",
   "keywords": ["Duplicate", "Tabs"],
   "engines": {
     "vscode": "^1.74.0"
